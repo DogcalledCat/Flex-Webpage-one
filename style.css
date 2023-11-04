@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;  
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.body {
+    padding: 16px;
+    flex: 1;
+}
+
+.logo-links {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.logo-links ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 8px;
+}
+
+.awesome {
+    display: flex;
+    justify-content: center;
+    padding: 32px 0;
+}
+
+/* how do i get text (.text) to match size of image (image-one)*/
+
+.random {
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    gap: 16px;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 24px;
+    margin: 42px;
+    background-color: red;
+}
+
+/* this is not the footer! add copywrite content. notice... page is split into 4 sections, excluding header and footer.
+body: display - column, and work through each quarter (excluding head+foot) at a time.
+
+refer to previous work, does header sit inside .body {flex: 1), unlike .footer in order to pin to top?*/
+
+
+
+
+
