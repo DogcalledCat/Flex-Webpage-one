@@ -4,10 +4,6 @@
     box-sizing: inherit;  
 }
 
-* {
-    outline: 1px solid rgb(134, 182, 245);
-}
-
 body {
     min-height: 100vh;
     margin: 0;
@@ -31,13 +27,15 @@ a {
 }
 
 .logo,
-h1 {
+h1,
+.seasons {
     color: #f9faf8;
 }
 
 .links,
 .text p,
-.text div {
+.text div,
+.season-images div {
     color: #e5e7eb;
 }
 
@@ -55,6 +53,11 @@ h1 {
     font-size: 24px;
 }
 
+.section-one {
+    display: flex;
+    justify-content: center;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -64,14 +67,14 @@ h1 {
 
 .text,
 .mushroom {
-    max-width: 500px;
+    max-width: 600px;
     max-height: 300px;
     margin: 28px;
 }
 
 .container-text-mushroom {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -88,9 +91,59 @@ h1 {
     font-size: 48px;
 }
 
+button {
+    margin-top: 28px;
+}
+
+.section-two {
+    background-color:rgb(4, 134, 43);
+}
+
+.container-two ul {
+    margin: 0;
+    padding: 28px;
+    list-style-type: none;
+    display: flex;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+/*how to center when wrap is un-even*/
+
+.container-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 28px;
+}
+
+.seasons { 
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.season-images {
+    display: flex;
+    justify-content: center;
+}
+
+.season-images img {
+    display: flex;
+    margin-bottom: 18px;
+}
+
+.season-images div {
+    text-align: center;
+    font-size: 18px;
+
+}
+
+
 .footer {
     margin-top: auto;
 }
+
 
 
 
