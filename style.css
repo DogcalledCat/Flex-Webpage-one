@@ -4,6 +4,8 @@
     box-sizing: inherit;  
 }
 
+
+
 body {
     min-height: 100vh;
     margin: 0;
@@ -28,7 +30,9 @@ a {
 
 .logo,
 h1,
-.seasons {
+.seasons,
+h3,
+.section-four-container div {
     color: #f9faf8;
 }
 
@@ -39,7 +43,8 @@ h1,
     color: #e5e7eb;
 }
 
-.header ul {
+.header ul,
+.section-three ul {
     list-style-type: none;
     font-size: 18px;
     display: flex;
@@ -53,6 +58,8 @@ h1,
     font-size: 24px;
 }
 
+/* can this just be .logo? ^*/
+
 .section-one {
     display: flex;
     justify-content: center;
@@ -61,7 +68,7 @@ h1,
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 16px;
+    padding: 28px;
     align-items: center;
 }
 
@@ -121,12 +128,15 @@ button {
 .seasons { 
     font-size: 28px;
     font-weight: 700;
+    margin-bottom: 18px;
 }
 
 .season-images {
     display: flex;
     justify-content: center;
 }
+
+/*do these need to be here? ^+below*/
 
 .season-images img {
     display: flex;
@@ -136,13 +146,90 @@ button {
 .season-images div {
     text-align: center;
     font-size: 18px;
-
 }
 
+/*A1. in which case this could be .a   . Look up, why add a class instead of using parent/child when writing css?*/
+
+.section-three {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(1, 104, 32);
+    padding: 28px;
+}
+
+.section-three p {
+    margin-top: 28px;
+    color: #e5e7eb;
+}
+
+.section-three h3 {
+    font-size: 28px;
+}
+
+.of-the-month {
+    margin: 18px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: yellowgreen;
+}
+
+.plants {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-width: 600px;
+}
+
+.section-four {
+    background-color:rgb(4, 134, 43);
+    display: flex;
+    justify-content: center;
+    
+}
+
+.section-four-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(3, 80, 26);
+    min-width: 800px;
+    padding: 28px 48px;
+    margin: 48px 64px;
+    flex-wrap: wrap; 
+    border-radius: 30px;
+}
+
+.sign-up {
+    background-color:rgb(4, 134, 43);
+    color: yellowgreen;
+    font-size: 16px;
+    border-radius: 30px;
+}
+
+.section-four button {
+    margin: 0;
+    padding: 18px;
+}
+
+.section-four-container div {
+    font-size: 18px;
+    font-weight: 500;
+}
 
 .footer {
     margin-top: auto;
+    padding: 28px;
+    text-align: center;
 }
+
+img {
+    border-radius: 30px;
+}
+
+
 
 
 
